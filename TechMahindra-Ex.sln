@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechMahindra-Ex", "TechMahindra-Ex.csproj", "{0A18A2C2-12E9-4CA6-A0A6-E40FA9E4335B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A18A2C2-12E9-4CA6-A0A6-E40FA9E4335B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A18A2C2-12E9-4CA6-A0A6-E40FA9E4335B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A18A2C2-12E9-4CA6-A0A6-E40FA9E4335B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A18A2C2-12E9-4CA6-A0A6-E40FA9E4335B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {958ED2DF-F2B4-4067-868B-B9BA6B93B7DC}
+	EndGlobalSection
+EndGlobal
