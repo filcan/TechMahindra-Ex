@@ -6,6 +6,8 @@
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+
+
 </head>
 <body>
 
@@ -28,7 +30,8 @@
             </div>
         </div>
     </nav>
-    <div class="navbar navbar-expand-lg navbar-dark bg-primary">
+    
+    <!--<div class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
             <a class="navbar-brand">@Html.ActionLink("Top UML Designs", "Index", "Home") </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,13 +66,13 @@
                         </div>
                     </li>
                 </ul>
-                <form class="d-flex">
+                <form class="d-flex">-->
                     @*<input class="form-control me-sm-2" type="text" placeholder="Search">*@
-                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search Top UML Design</button>
+                    <!--<button class="btn btn-secondary my-2 my-sm-0" type="submit">Search Top UML Design</button>
                 </form>
             </div>
         </div>
-    </div>
+    </div>-->
 
 
     @*<div class="navbar navbar-inverse navbar-fixed-top">
@@ -93,10 +96,7 @@
         </div>*@
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+     
     </div>
 
     @Scripts.Render("~/bundles/jquery")
