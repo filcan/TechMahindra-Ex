@@ -140,13 +140,21 @@
     <Compile Include="Models\SearchResult.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\Top4Search-Black%28300x75%29.png" />
+    <Content Include="Images\Top4Search-Black.png" />
+    <Content Include="Images\Top4Search-Logo%28300x75%29.png" />
+    <Content Include="Images\Top4Search-Logo.png" />
+    <Content Include="Images\Top4Search-White%28300x75%29.png" />
+    <Content Include="Images\Top4Search-White.png" />
     <Content Include="Content\bootstrap-lumen.css" />
     <Content Include="Content\bootstrap-materia.css" />
+    <Content Include="Content\bootstrap-quartz.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min-lumen.css" />
     <Content Include="Content\bootstrap.min-materia.css" />
+    <Content Include="Content\bootstrap.min-quartz.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
