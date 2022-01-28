@@ -38,11 +38,11 @@ namespace TechMahindra_Ex.Controllers
         {
             string searchQuery = Request["search"];
 
-            var request = WebRequest.Create("https://www.googleapis.com/customsearch/v1?key=" + apiKey + "&cx=" + searchEngineId + "&q=" + searchQuery + "&num=4&searchType=image");
+            var request = WebRequest.Create("https://www.googleapis.com/customsearch/v1?key=" + apiKey + "&cx=" + searchEngineId + "&q=" + searchQuery + "&num=4");
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();
             Stream dataStream = response.GetResponseStream();
             StreamReader reader = new StreamReader(dataStream);
-            string responseString = reader.ReadToEnd();
+            string responseString = reader.ReadToEnd(); 
             dynamic jsonData = JsonConvert.DeserializeObject(responseString);
 
             var results = new List<SearchResult>();
