@@ -16,7 +16,7 @@
 
 <div style="top: 40%; position: absolute; align-items:center; max-width: 600px; width: 100%;">
     <img src="~/Images/Top4Search-white(300x75).png" alt="Top4Search" style="display:block; margin-left: auto; margin-right:auto">
-    <form class="container" action="ShowResults" method="post">
+    <form class="container" action="@Url.Action("ShowResults")">
         <div class="form-group">
             <div class="form-group">
                 <div class="input-group mb-2">
@@ -26,11 +26,14 @@
             </div>
         </div>
     </form>
-    <div style=" display:block; margin-left: auto; margin-right:auto">
+    <div style="align-items:center; margin: auto">
         <button type="button" class="btn btn-primary btn-sm">UML Design</button>
         <button type="button" class="btn btn-primary btn-sm">Image Search</button>
     </div>
+
 </div>
+
+
 
 
 

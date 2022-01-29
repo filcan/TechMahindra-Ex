@@ -50,12 +50,13 @@ namespace TechMahindra_Ex.Controllers
             {
                 results.Add(new SearchResult
                 {
+                    SearchItem = searchQuery,
                     Title = item.title,
                     Link = item.link,
                     Snippet = item.snippet,
                 });
             }
-            return View(results.ToList());
+            return View("ShowResults", results.ToList());
         }
 
         public ActionResult ShowImageResults()
