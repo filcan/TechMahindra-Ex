@@ -9,6 +9,7 @@ namespace TechMahindra_Ex
     {
         public string SearchItem { get; set; }
         public string Title { get; set; }
+        public string displayLink { get; set; }
         public string Link { get; set; }
         public string Snippet { get; set; }
         public string Source { get; set; }
