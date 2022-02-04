@@ -3,18 +3,19 @@
 <div class="gcse-searchresults" data-gname="storesearch"></div>*@
 
 <center>
-    <div>
+    <div style="padding-top: 150px">
         <img src="~/Images/Top4Search-white(300x75).png" alt="Top4Search" class="img-responsive">
-        <form class="container" action="@Url.Action("ShowResults")">
-            <div class="form-group">
-                <div class="form-group" enableAutoComplete="true">
+        <form class="container" action="@Url.Action("ShowResults")" style="padding-top: 15px">
+            <div class="form-group" style="max-width:600px">
+                <div class="form-group " enableAutoComplete="true">
                     <div class="input-group mb-2">
-                        <input type="text" class="form-control gcse-search" autocomplete="on" aria-describedby="button-addon2" id="inputSearch" name="search" required>
+                        <input type="text" class="form-control col-sm" autocomplete="on" aria-describedby="button-addon2" id="inputSearch" name="search" required>
                         <button class="btn btn-primary" type="submit" id="buttonSearch"> <i class="fas fa-search"></i></button>
                     </div>
                 </div>
             </div>
         </form>
+        <button type="button" class="btn btn-link" onclick="location.href='@Url.Action("SearchImage","Search")'">Image Search</button>
     </div>
 </center>
 

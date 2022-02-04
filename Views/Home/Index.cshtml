@@ -1,58 +1,27 @@
-﻿@{
+﻿@model List<SearchResult>
+
+@{
     ViewBag.Title = "Search UML Design";
 }
 
-<style>
-    .container {
-        max-width: 600px;
-        width: 100%;
-        display: flex;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-</style>
-
-@*<center>
-    <div>
-        <img src="~/Images/Top4Search-white(300x75).png" alt="Top4Search" class="img-responsive">
-        <form class="container" action="@Url.Action("ShowResults")">
-            <div class="form-group">
-                <div class="form-group">
-                    <div class="input-group mb-2">
-                        <input type="text" class="form-control" aria-describedby="button-addon2" name="search" required>
-                        <button class="btn btn-primary" type="submit" id="button-addon2"> <i class="fas fa-search"></i></button>
-                    </div>
-                </div>
-            </div>
-        </form>
-    </div>
-</center>*@
-
-@*<div style="top: 40%; position: absolute; align-items:center; max-width: 600px; width: 100%;">
-    <img src="~/Images/Top4Search-white(300x75).png" alt="Top4Search" style="display:block; margin-left: auto; margin-right:auto">
-    <form class="container" action="@Url.Action("ShowResults")">
-        <div class="form-group">
-            <div class="form-group">
-                <div class="input-group mb-2">
-                    <input type="text" class="form-control" aria-describedby="button-addon2" name="search" required>
-                    <button class="btn btn-primary" type="submit" id="button-addon2"> <i class="fas fa-search"></i></button>
-                </div>
-            </div>
-        </div>
-    </form>
-    <div style="align-items:center; margin: auto">
-        <button type="button" class="btn btn-primary btn-sm">UML Design</button>
-        <button type="button" class="btn btn-primary btn-sm">Image Search</button>
-    </div>
-
-</div>*@
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 
 
+<button type="button" class="btn btn-primary" id="buttonUML" data-action="@Url.Action("ShowTopUML", "Search")">Top 4 UML Design</button>
 
+<script>
+    $("#buttonUML").on("click", function () {
+        $.ajax({
+            url: $("#buttonUML").attr("data-action"),
+            data: { "searchItem": "Top 4 UML Design" },
+            success: function (result) {
 
+                window.location.href = result.url;
+            }
+        });
+    });
 
-
+</script>
 
 <!--<div class="row" style="position: relative; width: 100%; overflow: hidden; padding-top: 56.25%;">
 

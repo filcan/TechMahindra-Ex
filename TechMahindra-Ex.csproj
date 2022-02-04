@@ -192,6 +192,7 @@
     <Content Include="Views\Search\Index.cshtml" />
     <Content Include="Views\Search\ShowResults.cshtml" />
     <Content Include="Views\Search\ShowImageResults.cshtml" />
+    <Content Include="Views\Search\SearchImage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

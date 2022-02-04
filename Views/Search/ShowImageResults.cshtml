@@ -1,29 +1,21 @@
-﻿@model List<SearchResult>
-<br />
+﻿@model List<SearchImageResult>
 @{
-    ViewBag.Title = "Search Result";
+    ViewBag.Title = "Image Search Result";
 }
-<center>
-    <div style="background: #ffffff">
-        <ul>
-            @foreach (var item in Model)
-            {
-                <li style="width:500px">
-                    <a href="@item.Link" style="color:blue">@item.Title</a><br />
-                    <span style="font-size:15px;color:green">@item.Link</span><br />
-                    <span style="color:gray;">@item.Snippet</span>
-                    <img src="@item.Link" alt="@item.Title" class="img-responsive">
-                    <hr />
-                </li>
-                @*<iframe src="@item.Link" width="100%" height="100%">
-                    <p>Your browser does not support iframes.</p>
-                </iframe>*@
-            }
-        </ul>
-    </div>
-</center>
 
 
-@*<iframe src="https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-uml/" width="100%" height="100%">
-    <p>Your browser does not support iframes.</p>
-</iframe>*@
+<ul class="list-group list-group-horizontal-md" style="margin: auto">
+    @foreach (var item in Model)
+    {
+        <li class="list-group-item">
+            <a href="@item.Link" class="text-dark">
+                <div class="card" style="width: 18rem;">
+                    <img  class="card-img-top" src="@item.Link" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">@item.Title</p>
+                    </div>
+                </div>
+            </a>
+        </li>
+    }
+</ul>

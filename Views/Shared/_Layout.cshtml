@@ -13,7 +13,7 @@
 
 
 </head>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="@Url.Action("Index", "Home")">Top4Search</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,10 +70,9 @@
             </div>
         </nav>*@
 
-    <div class="container body-content">
-        @RenderBody()
-    </div>
 
+        @RenderBody()
+    
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
