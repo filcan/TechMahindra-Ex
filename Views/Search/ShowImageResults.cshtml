@@ -1,21 +1,27 @@
-﻿@model List<SearchImageResult>
+﻿@model List<SearchImageResponse>
 @{
     ViewBag.Title = "Image Search Result";
 }
 
 
-<ul class="list-group list-group-horizontal-md" style="margin: auto">
-    @foreach (var item in Model)
-    {
-        <li class="list-group-item">
-            <a href="@item.Link" class="text-dark">
-                <div class="card" style="width: 18rem;">
-                    <img  class="card-img-top" src="@item.Link" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">@item.Title</p>
+<center>
+    <div class="row" style="margin-bottom:50px">
+        <ul>
+            @foreach (var item in Model)
+            {
+                <li class="list-group-item">
+                    <div class="col-md-2">
+                        <div class="thumbnail">
+                            <a href="@item.Url">
+                                <img src="@item.Link" alt="Lights" style="width:100%">
+                                <div class="caption">
+                                    <p>@item.Snippet</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </div>
-            </a>
-        </li>
-    }
-</ul>
+                </li>
+            }
+        </ul>
+    </div>
+</center>

@@ -1,11 +1,15 @@
 ﻿@*<script async src="https://cse.google.com/cse.js?cx=129e9516dffb81f9f"></script>
-<div class="gcse-searchbox" data-gname="storesearch"></div>
-<div class="gcse-searchresults" data-gname="storesearch"></div>*@
+    <div class="gcse-searchbox" data-gname="storesearch"></div>
+    <div class="gcse-searchresults" data-gname="storesearch"></div>*@
+
+@{
+    ViewBag.Title = "Top4Search";
+}
 
 <center>
     <div style="padding-top: 150px">
         <img src="~/Images/Top4Search-white(300x75).png" alt="Top4Search" class="img-responsive">
-        <form class="container" action="@Url.Action("ShowResults")" style="padding-top: 15px">
+        <form class="container" action="@Url.Action("SearchResult")" style="padding-top: 15px">
             <div class="form-group" style="max-width:600px">
                 <div class="form-group " enableAutoComplete="true">
                     <div class="input-group mb-2">

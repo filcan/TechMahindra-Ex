@@ -1,41 +1,41 @@
-﻿@model List<SearchResult>
+﻿@model List<SearchResponse>
 <br />
 @{
     ViewBag.Title = "Search Result";
 }
 
-    <div style="background: #ffffff; color: black">
-        <ul>
-            @foreach (var item in Model)
-            {
-                @*<li style="width:500px">
-                        <a href="@item.Link" style="color:blue">@item.Title</a><br />
-                        <span style="font-size:15px;color:green">@item.Link</span><br />
-                        <span style="color:gray;">@item.Snippet</span>
-                        <img src="@item.Link" alt="@item.Title" class="img-responsive">
+<body style="background: #fff">
+    <div class="container">
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row">
+            <div class="col-md-8">
+                <ul style="list-style-type:none;">
+                    @foreach (var item in Model)
+                    {
+                        <li>
+                            <a style="text-decoration: none;" href="@item.Link" class="text-dark" target="iframe1">
+                                @item.Link
+                                <span class="text-info">
+                                    <h4>@item.Title</h4>
+                                </span>
+                            </a>
+                            <p class="text-dark">@item.Snippet</p>
+
+                        </li>
                         <hr />
-                    </li>*@
-
-            <li>
-                <a href="@item.Link" class="text-dark">@item.Link</a>
-                <span class="text-info"><p>@item.Title</p></span>
-                <p>@item.Snippet</p>
-            </li>
-                
-            <hr />
-
-            }
-        </ul>
+                    }
+                </ul>
+            </div>
+            <div class="col-6 col-md-4">
+                <iframe src="" width="400px" height="700px" name="iframe1">
+                    <p>Your browser does not support iframes.</p>
+                </iframe>
+            </div>
+        </div>
     </div>
+</body>
 
 
-@*<iframe src = "@item.Link" width = "100%" height = "100%" >
-
-                         < p > Your browser does not support iframes.</ p >
-
-                        </iframe >*@
 
 
-@*<iframe src="https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-uml/" width="100%" height="100%">
-        <p>Your browser does not support iframes.</p>
-    </iframe>*@
+

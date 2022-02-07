@@ -5,7 +5,7 @@ using System.Web;
 
 namespace TechMahindra_Ex
 {
-    public class SearchResult
+    public class SearchResponse
     {
         public string SearchItem { get; set; }
         public string Title { get; set; }
@@ -17,7 +17,7 @@ namespace TechMahindra_Ex
         public int Index { get; set; }
     }
 
-    public class SearchImageResult
+    public class SearchImageResponse
     {
         public string SearchItem { get; set; }
         public string Title { get; set; }
@@ -26,5 +26,6 @@ namespace TechMahindra_Ex
         public string Source { get; set; }
         public string Query { get; set; }
         public int Index { get; set; }
+        public string Url { get; set; }
     }
 }
